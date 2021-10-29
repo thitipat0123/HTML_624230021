@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>ใบงานที่ 7 ข้อ1</title>
+ </head>
+ <body>
+	<script type="text/javascript">
+		var ans = confirm("คุณต้องการคำนวณอัตราดอกเบี้ยที่จะได้รับใช่หรือไม่");
+		if(ans==true){
+			var balancetext = prompt("ใสจำนวนเงินฝาก");  
+			var balance = Number(balancetext);
+			var percent = prompt("ใส่อัตราดอกเบี้ยที่จะได้รับ(%)");
+			interest=balance*percent/100;
+
+			iyear = prompt("ใส่ระยะเวลาฝาก(ปี)");
+			calculate(balance, interest, iyear);
+			function calculate(balance, interest, iyear) {
+				year=1;
+				while (year<=iyear)	//iyear กำหนดจำนวนปี
+				{
+					balance+=interest;
+					document.write("Balance year " + year + " = " + balance + " baht");
+					document.write("<br>");
+					year++; //year=year+1
+				}
+			}
+		}
+		else{alert("คุณไม่ต้องการคำนวณอัตราดอกเบี้ยที่จะได้รับ");}
+	</script>
+ </body>
+</html>

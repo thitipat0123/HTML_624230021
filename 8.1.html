@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>ใบงานที่6 ข้อ 1</title>
+ </head>
+ <body>
+
+   <script type="text/javascript">
+    var ans = confirm("คุณต้องการหาเกรดเฉลี่ยใช่หรือไม่");
+	if(ans==true){
+		var score = prompt("ใส่คะแนน"); 
+		checkGrade(score);
+		function checkGrade(score) {
+			if(score<50)
+			{
+				document.write("<h1>คุณได้เกรด F</h1>");
+			}
+			else if(score<60)
+			{
+				document.write("<h1>คุณได้เกรด D</h1>");
+			}
+			else if(score<70)
+			{
+				document.write("<h1>คุณได้เกรด C</h1>");
+			}
+			else if(score<80)
+			{
+
+				document.write("<h1>คุณได้เกรด B</h1>");
+			}
+			else if(score>=80 && score<=100)
+			{
+				document.write("<h1>คุณได้เกรด A</h1>");
+			}
+			else
+			{
+				document.write("<h1>เกิดข้อผิดพลาด<h1>");
+			}
+		}
+    }
+	else{alert("ไม่ต้องการหาเกรดเฉลี่ย");}
+  </script>
+ </body>
+</html>

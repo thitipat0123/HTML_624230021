@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>ใบงานที่ 7 ข้อ1</title>
+ </head>
+ <body>
+	<script type="text/javascript">
+		balance=100;
+		interest=balance*3/100;
+		iyear=5;
+		calculate(balance, interest, iyear);
+		document.write("<hr>");
+		balance=10000;
+		interest=balance*5/100;
+		iyear=10;
+		calculate(balance, interest, iyear);
+		function calculate(balance, interest, iyear) {
+			year=1;
+			while (year<=iyear) //iyear กำหนดจำนวนปี
+			{
+				balance+=interest;
+				document.write("Balance year "+ year +" = "+ balance +" baht");
+				document.write("<br>");
+				year++; //year=year+1
+			}
+		}
+	</script>
+ </body>
+</html>

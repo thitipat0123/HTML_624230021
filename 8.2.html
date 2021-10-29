@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>ใบงานที่ 6 ข้อ  2</title>
+ </head>
+ <body>
+
+ <script type="text/javascript">
+    var ans = confirm("คุณต้องการแสดงชื่อวันหรือไม่");
+	if(ans==true){
+		var numtext = prompt("ใส่เลขวัน(1-7)"); 
+		var number = Number(numtext);  
+		day(number);
+		function day(number) {
+			switch (number)
+			{
+				case 1:{
+						document.write("<h1>Monday</h1>");
+						break;
+					}
+				case 2:{
+						document.write("<h1>Tuesday</h1>");
+						break;
+					}
+				case 3:{
+						document.write("<h1>Wendesday</h1>");
+						break;
+					}
+				case 4:{
+						document.write("<h1>Thursday</h1>");
+						break;
+					}
+				case 5:{
+						document.write("<h1>Friday</h1>");
+						break;
+					}
+				case 6:{
+						document.write("<h1>Saturday</h1>");
+						break;
+					}
+				case 7:{
+						document.write("<h1>Sunday</h1>");
+						break;
+					}
+				default : {
+							document.write("<h1>เกิดข้อผิดพลาด</h>");
+						}
+			}
+			document.write("<br>");
+		}
+	}
+	else{alert("คุณไม่ต้องการแสดงชื่อวัน");}
+  </script>
+ </body>
+</html>
